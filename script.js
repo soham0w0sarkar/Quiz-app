@@ -36,6 +36,13 @@ const questions =[
     }
 ]
 
+const messages =[
+     "Don't see the check box (o_o)",
+     "Need help finding the answers (?_?)",
+     "seriously ('=')",
+     "It's not that hard (-_-)"
+];
+
 // const text = document.getElementById("last");
 const questionEl = document.getElementById("question");
 const a_text = document.getElementById("a_text");
@@ -87,5 +94,9 @@ stdbtn.addEventListener('click',() =>{
                 location.reload();
             })
         }
+   }else{
+        let x= Math.floor(Math.random()*4);
+        
+        alert(messages[x]);
    } 
 })
